@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Messenjah Selah | Reggae Is Bigga Than Music</title>
+<meta name="description" content="Messenjah Selah (DivinityOne): musical healer, meditation guide and heart-space mindset coach. Roots reggae, guided meditation and teachings. You are worthy of Divinity!">
+<meta property="og:title" content="Messenjah Selah | Reggae Is Bigga Than Music">
+<meta property="og:description" content="Roots reggae, guided meditation, teachings and the Music Vault.">
+<meta property="og:image" content="https://messenjahselah.com/images/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FDF9EF; --bg2:#F6EFDC; --card:#FFFFFF;
+  --ink:#1D2A1F; --muted:#5E6B5F;
+  --gold:#C99A1B; --gold-2:#E8C65A; --gold-soft:#FBF0CF;
+  --green:#1E6B3C; --green-2:#2E8B50; --green-soft:#E3F1E6;
+  --red:#B8322A;
+  --line:#E9DFC4;
+  --shadow:0 10px 30px rgba(60,48,10,.08);
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,sans-serif;line-height:1.6;padding-bottom:96px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;letter-spacing:-.01em}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green)}
+.eyebrow::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:10px;vertical-align:middle}
+section{padding:88px 0}
+.sec-head{max-width:680px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(2rem,4.5vw,3rem);margin:10px 0 12px}
+.sec-head p{color:var(--muted);font-size:1.08rem}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#2b2205;box-shadow:0 8px 22px rgba(201,154,27,.35)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-2)}
+.btn-ghost{border-color:var(--green);color:var(--green);background:transparent}
+.btn-sm{padding:9px 18px;font-size:.9rem}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(253,249,239,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:Fraunces,serif;font-weight:900;font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .mark{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--green) 0 45%,var(--gold) 45% 92%,var(--red) 92% 100%);display:grid;place-items:center}
+.brand .mark::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--bg)}
+.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+.nav ul a{text-decoration:none;font-weight:500;color:var(--ink);font-size:.95rem}
+.nav ul a:hover{color:var(--green)}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--ink)}
+
+/* HERO */
+.hero{position:relative;padding:70px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-220px;top:-200px;width:760px;height:760px;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg,rgba(201,154,27,.16) 0 6deg,transparent 6deg 18deg);
+  -webkit-mask:radial-gradient(circle,#000 30%,transparent 70%);mask:radial-gradient(circle,#000 30%,transparent 70%);animation:spin 120s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);font-weight:900;margin:18px 0}
+.hero h1 span{color:var(--green)}
+.slogan{font-family:Fraunces,serif;font-style:italic;font-size:clamp(1.3rem,2.6vw,1.8rem);color:var(--gold);font-weight:700;margin-bottom:18px}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:520px;margin-bottom:30px}
+.worthy{font-family:Fraunces,serif;font-weight:700;font-size:1.25rem;color:var(--green);margin:-14px 0 28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+.portrait{position:relative;aspect-ratio:4/5;border-radius:220px 220px 26px 26px;overflow:hidden;
+  background:linear-gradient(160deg,var(--green-soft),var(--gold-soft));border:6px solid #fff;box-shadow:var(--shadow)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--green);font-family:Fraunces,serif;font-size:1.2rem;padding:20px}
+.badge{position:absolute;left:-18px;bottom:40px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;font-weight:600}
+.badge .dot{width:10px;height:10px;border-radius:50%;background:var(--red);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.tricolor{height:5px;background:linear-gradient(90deg,var(--green) 0 46%,var(--gold) 46% 94%,var(--red) 94%)}
+
+/* AFFIRMATION */
+.affirm{background:var(--green);color:#fff;padding:60px 0;position:relative;overflow:hidden}
+.affirm::after{content:"✦";position:absolute;right:6%;top:50%;transform:translateY(-50%);font-size:12rem;color:rgba(232,198,90,.12)}
+.affirm .wrap{display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.affirm .eyebrow{color:var(--gold-2)}
+.affirm blockquote{font-family:Fraunces,serif;font-size:clamp(1.5rem,3.4vw,2.3rem);font-weight:500;max-width:780px;margin-top:12px;min-height:2.4em;transition:opacity .35s}
+.affirm .acts{display:flex;gap:10px;flex-wrap:wrap}
+.affirm .btn-ghost{border-color:var(--gold-2);color:var(--gold-2)}
+
+/* MUSIC */
+.music-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.now{background:var(--card);border-radius:var(--r);padding:26px;box-shadow:var(--shadow);border:1px solid var(--line);position:sticky;top:90px}
+.disc{aspect-ratio:1;border-radius:50%;margin:6px auto 22px;width:78%;
+  background:radial-gradient(circle,var(--bg) 0 7%,var(--gold) 7% 20%,#1b1b1b 20% 21%,#222 21% 100%);
+  box-shadow:0 18px 40px rgba(0,0,0,.25);position:relative}
+.disc::before{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 3px,rgba(255,255,255,.04) 3px 4px)}
+.cover{position:relative;width:72%;margin:6px 0 24px 6%}
+.cover img{position:relative;z-index:2;width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+.cover .disc{position:absolute;top:4%;left:22%;width:92%;margin:0;z-index:1}
+.disc.spin{animation:spin 6s linear infinite}
+.now h3{font-size:1.5rem;text-align:center}
+.now .sub{text-align:center;color:var(--muted);margin-bottom:18px}
+.tracks{list-style:none;background:var(--card);border-radius:var(--r);border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow)}
+.tracks li{display:flex;align-items:center;gap:16px;padding:15px 20px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .15s}
+.tracks li:last-child{border-bottom:0}
+.tracks li:hover{background:var(--gold-soft)}
+.tracks li.active{background:var(--green-soft)}
+.tracks .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--bg2);font-weight:600;font-size:.85rem;flex-shrink:0}
+.tracks li.active .n{background:var(--green);color:#fff}
+.tracks .t{flex:1;min-width:0}
+.tracks .t b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tracks .t small{color:var(--muted)}
+.tracks .d{color:var(--muted);font-size:.9rem}
+.lock{font-size:.75rem;font-weight:700;color:#7a5c00;background:var(--gold-soft);border:1px solid var(--gold-2);padding:3px 9px;border-radius:999px;white-space:nowrap}
+.free{font-size:.75rem;font-weight:700;color:var(--green);background:var(--green-soft);padding:3px 9px;border-radius:999px}
+.platforms{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;justify-content:center}
+
+/* MEDITATION */
+.meditate{background:linear-gradient(180deg,var(--bg) 0%,var(--green-soft) 100%)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--card);border-radius:var(--r);padding:26px;border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card .icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;background:var(--gold-soft)}
+.card h3{font-size:1.35rem}
+.card p{color:var(--muted);flex:1}
+.card .meta{display:flex;justify-content:space-between;align-items:center;gap:10px}
+
+/* TEACHINGS */
+.teach .card .icon{background:var(--green-soft)}
+.teach .tag{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.readmore{color:var(--green);font-weight:600;text-decoration:none}
+
+/* COACHING */
+.coach{background:var(--bg2)}
+.coach .card .icon{background:var(--green-soft)}
+
+/* VAULT */
+.vault{background:#16251A;color:#F5EED8;position:relative;overflow:hidden}
+.vault::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 0%,rgba(201,154,27,.25),transparent 50%)}
+.vault .wrap{position:relative}
+.vault .eyebrow{color:var(--gold-2)}
+.vault .sec-head p{color:#C9C3AE}
+.vhead{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:40px}
+.vhead .sec-head{margin-bottom:0}
+.vhead img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 30%;border-radius:20px;border:3px solid rgba(232,198,90,.5)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.vitem{border-radius:16px;overflow:hidden;background:#203425;border:1px solid rgba(232,198,90,.25);cursor:pointer;transition:transform .2s}
+.vitem:hover{transform:translateY(-4px)}
+.vcover{aspect-ratio:1;position:relative;display:grid;place-items:center;font-family:Fraunces,serif;font-size:1.3rem;text-align:center;padding:16px;color:#fff}
+.vcover .lk{position:absolute;inset:0;background:rgba(10,20,12,.55);display:grid;place-items:center;font-size:2.2rem;opacity:0;transition:opacity .2s}
+.vitem:hover .lk{opacity:1}
+.vinfo{padding:14px 16px}
+.vinfo b{display:block}
+.vinfo small{color:#B9B39E}
+
+/* PRICING */
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px;align-items:stretch}
+.tier{background:var(--card);border-radius:22px;padding:32px 28px;border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative}
+.tier.feat{border:2px solid var(--gold);background:linear-gradient(180deg,#fff,var(--gold-soft));transform:scale(1.03)}
+.tier .pop{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.1em;padding:6px 14px;border-radius:999px;text-transform:uppercase}
+.tier h3{font-size:1.5rem}
+.price{font-family:Fraunces,serif;font-size:2.8rem;font-weight:900;margin:12px 0 2px}
+.price small{font-family:Outfit;font-size:1rem;font-weight:400;color:var(--muted)}
+.tier ul{list-style:none;margin:20px 0 28px;flex:1}
+.tier li{padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed var(--line)}
+.tier li::before{content:"✓";position:absolute;left:0;top:8px;width:20px;height:20px;border-radius:50%;background:var(--green-soft);color:var(--green);font-size:.75rem;font-weight:700;display:grid;place-items:center}
+.toggle{display:inline-flex;background:var(--bg2);border-radius:999px;padding:5px;margin-bottom:34px}
+.toggle button{border:0;background:none;padding:9px 20px;border-radius:999px;font-family:inherit;font-weight:600;cursor:pointer;color:var(--muted)}
+.toggle button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.save{color:var(--red);font-size:.8rem;font-weight:700}
+
+/* SUPPORT */
+.support{background:var(--bg2)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.tips{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.tips a{flex:1;text-align:center;padding:10px;border-radius:12px;border:2px solid var(--gold);text-decoration:none;font-weight:700;color:#6f5300}
+.tips a:hover{background:var(--gold-soft)}
+
+/* MERCH */
+.merch{padding:70px 0}
+.merch .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+.merch img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:26px;border:6px solid #fff;box-shadow:var(--shadow)}
+.merch h2{font-size:clamp(2rem,4.5vw,3rem);margin:10px 0 12px}
+.merch p{color:var(--muted);font-size:1.08rem;margin-bottom:24px;max-width:520px}
+
+/* ABOUT */
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+.about .quote{font-family:Fraunces,serif;font-size:1.25rem;line-height:1.45;color:var(--green);border-left:5px solid var(--gold);padding-left:22px;margin:22px 0}
+.about p{color:var(--muted);margin-bottom:14px;font-size:1.05rem}
+.about .frame{aspect-ratio:4/5;border-radius:26px;background:linear-gradient(135deg,var(--gold-soft),var(--green-soft));border:6px solid #fff;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.about .frame img{width:100%;height:100%;object-fit:cover}
+
+/* NEWSLETTER */
+.news{background:linear-gradient(135deg,var(--gold),var(--gold-2));padding:64px 0;color:#2b2205}
+.news .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.news h2{font-size:clamp(1.8rem,3.5vw,2.4rem)}
+.news form{display:flex;gap:10px;flex-wrap:wrap;flex:1;max-width:480px}
+.news input{flex:1;min-width:200px;padding:15px 20px;border-radius:999px;border:0;font-family:inherit;font-size:1rem}
+
+footer{background:#15231A;color:#C9C3AE;padding:50px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer .brand{color:#fff}
+footer .soc{display:flex;gap:12px}
+footer .soc a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(232,198,90,.4);display:grid;place-items:center;text-decoration:none;color:var(--gold-2);font-weight:700;font-size:.85rem}
+footer .soc a:hover{background:rgba(232,198,90,.15)}
+footer small{display:block;margin-top:24px;width:100%;opacity:.7}
+
+/* PLAYER BAR */
+.player{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(0,0,0,.08)}
+.player .bar{height:4px;background:var(--bg2);cursor:pointer;position:relative}
+.player .fill{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,var(--green),var(--gold))}
+.player .wrap{display:flex;align-items:center;gap:16px;height:80px}
+.pinfo{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
+.pinfo .art{width:48px;height:48px;border-radius:10px;flex-shrink:0;object-fit:cover}
+.pinfo b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pinfo small{color:var(--muted)}
+.ctrls{display:flex;align-items:center;gap:8px}
+.ctrls button{background:none;border:0;cursor:pointer;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:var(--ink);font-size:1.05rem}
+.ctrls button:hover{background:var(--bg2)}
+.ctrls .play{width:52px;height:52px;background:var(--green);color:#fff;font-size:1.2rem}
+.ctrls .play:hover{background:var(--green-2)}
+.ptime{font-size:.85rem;color:var(--muted);min-width:96px;text-align:right}
+.vol{width:90px;accent-color:var(--green)}
+
+.toast{position:fixed;left:50%;bottom:110px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:70;font-weight:500;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* MODAL */
+.modal{position:fixed;inset:0;background:rgba(15,25,18,.6);display:none;place-items:center;z-index:80;padding:20px}
+.modal.open{display:grid}
+.modal .box{background:#fff;border-radius:22px;max-width:440px;width:100%;padding:34px;text-align:center;position:relative}
+.modal .box .ic{font-size:2.6rem;margin-bottom:10px}
+.modal .box h3{font-size:1.7rem;margin-bottom:8px}
+.modal .box p{color:var(--muted);margin-bottom:22px}
+.modal .x{position:absolute;right:16px;top:12px;background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--muted)}
+
+@media (max-width:900px){
+  .hero .wrap,.music-grid,.about .wrap,.vhead,.merch .wrap{grid-template-columns:1fr}
+  .portrait{max-width:380px;margin:0 auto}
+  .now{position:static}
+  .tier.feat{transform:none}
+  .nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line);gap:16px}
+  .nav ul.open{display:flex}
+  .menu-btn{display:block}
+  .vol,.ptime{display:none}
+  section{padding:64px 0}
+}
+@media (max-width:520px){
+  .ctrls .sk{display:none}
+  .badge{left:8px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark"></span>Messenjah Selah</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="#music">Music</a></li>
+      <li><a href="#meditation">Meditation</a></li>
+      <li><a href="#teachings">Teachings</a></li>
+      <li><a href="#coaching">Coaching</a></li>
+      <li><a href="#vault">The Vault</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#join" class="btn btn-gold btn-sm">Join</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Musical Healer · Meditation Guide · Mindset Coach</span>
+      <h1>Messenjah <span>Selah</span></h1>
+      <p class="slogan">“Reggae is bigga than music.”</p>
+      <p class="lead">Jamaican-born roots reggae artist, musical healer and transformational life coach. Music, meditation and teachings to help you follow your heart and rewrite your story.</p>
+      <p class="worthy">You are worthy of Divinity!</p>
+      <div class="ctas">
+        <a href="#music" class="btn btn-green" onclick="playIndex(0)">▶ Listen Now</a>
+        <a href="#join" class="btn btn-gold">Join the Inner Circle</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="images/selah.jpg" alt="Messenjah Selah pointing at the camera" style="object-position:50% 22%">
+      <div class="badge"><span class="dot"></span>New music in the Vault</div>
+    </div>
+  </div>
+</section>
+<div class="tricolor"></div>
+
+<section class="affirm" id="affirmation">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Today’s Affirmation</span>
+      <blockquote id="affText"></blockquote>
+    </div>
+    <div class="acts">
+      <a class="btn btn-gold btn-sm" id="lnkPatreonAff" target="_blank" rel="noopener">🎧 Hear Today’s Affirmation on Patreon</a>
+      <button class="btn btn-ghost btn-sm" onclick="newAffirmation()">✦ New Affirmation</button>
+      <button class="btn btn-ghost btn-sm" onclick="shareAffirmation()">Share</button>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Music</span>
+      <h2>Songs of Awareness</h2>
+      <p>Press play and let the riddim carry the message. Members unlock full albums, unreleased songs and early releases in the Vault.</p>
+    </div>
+    <div class="music-grid">
+      <div class="now">
+        <div class="cover"><div class="disc" id="disc"></div><img src="images/cover.jpg" alt="Messenjah Selah: Reggae is bigga than music"></div>
+        <h3 id="nowTitle">Select a song</h3>
+        <p class="sub" id="nowSub">Messenjah Selah</p>
+        <div style="text-align:center"><button class="btn btn-green" onclick="togglePlay()" id="bigPlay">▶ Play</button></div>
+        <div class="platforms">
+          <a class="btn btn-ghost btn-sm" id="lnkSpotify" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost btn-sm" id="lnkApple" target="_blank" rel="noopener">Apple Music</a>
+          <a class="btn btn-ghost btn-sm" id="lnkBandcamp" target="_blank" rel="noopener">Buy on Bandcamp</a>
+        </div>
+      </div>
+      <ul class="tracks" id="trackList"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="meditate" id="meditation">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Guided Meditation</span>
+      <h2>Return to the Heart</h2>
+      <p>Breathe, settle and return to balance. Guided meditations with Selah’s voice over gentle roots riddims.</p>
+    </div>
+    <div class="cards" id="medCards"></div>
+  </div>
+</section>
+
+<section class="teach" id="teachings">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Teachings</span>
+      <h2>Wisdom for Daily Living</h2>
+      <p>Reflections on unity, balance, faith and the power of choice. Because reggae is a way of life.</p>
+    </div>
+    <div class="cards" id="teachCards"></div>
+  </div>
+</section>
+
+<section class="coach" id="coaching">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Center True Self Coaching</span>
+      <h2>Come Home to Your Own Light</h2>
+      <p>Welcome to Center True Self, where inspiration meets transformation. Selah’s mission is to support those whose greatest desire is to follow their heart and rewrite their story as they live it. Trust yourself again.</p>
+    </div>
+    <div class="cards" id="coachCards"></div>
+  </div>
+</section>
+
+<section class="vault" id="vault">
+  <div class="wrap">
+    <div class="vhead">
+      <div class="sec-head">
+        <span class="eyebrow">The Music Vault</span>
+        <h2>Unreleased. Rare. Members Only.</h2>
+        <p>Full albums, live recordings, dubs and early releases. Become a member to open the Vault.</p>
+      </div>
+      <img src="images/studio.jpg" alt="Messenjah Selah in the studio">
+    </div>
+    <div class="vgrid" id="vaultGrid"></div>
+    <div style="margin-top:36px"><a href="#join" class="btn btn-gold">🔓 Unlock the Vault</a></div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap" style="text-align:center">
+    <div class="sec-head" style="margin:0 auto 24px">
+      <span class="eyebrow">Membership</span>
+      <h2>Join the Movement</h2>
+      <p>Your membership supports independent roots reggae and gives you the full library of music and meditation.</p>
+    </div>
+    <div class="toggle">
+      <button class="on" id="tMonthly" onclick="setBilling('monthly')">Monthly</button>
+      <button id="tYearly" onclick="setBilling('yearly')">Yearly <span class="save">2 months free</span></button>
+    </div>
+    <div class="tiers" style="text-align:left" id="tiers"></div>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Support</span>
+      <h2>Keep the Message Moving</h2>
+      <p>Every song bought, every tip and every booking helps carry the music forward.</p>
+    </div>
+    <div class="sgrid">
+      <div class="card">
+        <div class="icon">🙏🏾</div>
+        <h3>Give Thanks (Tip)</h3>
+        <p>A one-time gift of any size, straight to the artist.</p>
+        <div class="tips" id="tipBtns"></div>
+      </div>
+      <div class="card">
+        <div class="icon">💿</div>
+        <h3>Buy the Music</h3>
+        <p>Download albums and singles in high quality. You own them forever.</p>
+        <a class="btn btn-green btn-sm" id="lnkBuy" target="_blank" rel="noopener">Shop Music</a>
+      </div>
+      <div class="card">
+        <div class="icon">🎤</div>
+        <h3>Book Selah</h3>
+        <p>Festivals, concerts, retreats, workshops and private events.</p>
+        <a class="btn btn-green btn-sm" id="lnkBook">Booking Inquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="merch" id="merch">
+  <div class="wrap">
+    <img src="images/merch.jpg" alt="Messenjah Selah wearing the Reggae Is Bigga Than Music shirt">
+    <div>
+      <span class="eyebrow">Official Merch</span>
+      <h2>Wear the Message</h2>
+      <p>The “Reggae Is Bigga Than Music” collection. Every shirt carries the message and supports the music.</p>
+      <a class="btn btn-gold" id="lnkMerch" target="_blank" rel="noopener">👕 Shop Merch</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="frame">
+      <img src="images/selah-2.jpg" alt="Messenjah Selah with his guitar" style="object-position:50% 30%">
+    </div>
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 style="font-size:clamp(2rem,4.5vw,3rem);margin-top:10px">The Messenger</h2>
+      <div class="quote">“I see reggae music as a conduit that brings us to a deeper innerstanding of our divine purpose. It is becoming a movement, where reggae is not just dance music but a vehicle for change and growth.”</div>
+      <p>Messenjah Selah grew up in the hills outside Kingston, Jamaica, absorbing reggae from the radio, record shops, churches and sound systems. At 15 he moved to the U.S. Virgin Islands, where he formed an a cappella group that grew into a gospel reggae band, with Selah on lead vocals and guitar. That is when he knew music was his life’s path.</p>
+      <p>In Atlanta he began recording as a solo artist in 1997, earning <b>Best New Male Vocalist (1999)</b> and <b>Best New Vocalist (2001)</b> at the Atlanta Caribbean Awards. He has shared the stage with <b>Beres Hammond, Luciano, Sizzla, Buju Banton and Shaggy</b>.</p>
+      <p>Returning to Jamaica to record, he released “I Will Survive” featuring Luciano and “Joy” featuring Sizzla, both on his debut album <i>Whosoever Will</i> (2003). He followed with <i>Breaking Babylon Curse</i> (2009), the mixtape <i>Roots and Branches</i> (2012) and the EP <i>Coming Home to Me</i> (2014). His songs speak to relationships, culture, the environment, health, mindset, and social and political life.</p>
+      <p>Today, as <b>DivinityOne</b>, Selah carries the message beyond the stage as a musical healer, meditation guide and heart-space mindset coach. “Life coaching on and off the stage comes naturally to me,” he says. “Transformation is my passion.”</p>
+      <a href="#join" class="btn btn-gold">Join the Movement</a>
+    </div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="wrap">
+    <div>
+      <h2>Get the Weekly Affirmation</h2>
+      <p>New music, meditations and teachings, straight to your inbox.</p>
+    </div>
+    <form id="newsForm" target="_blank">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button class="btn btn-green" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="#top" class="brand"><span class="mark"></span>Messenjah Selah</a>
+      <p style="margin-top:10px">Reggae is bigga than music. Living the message.</p>
+    </div>
+    <div class="soc" id="socials"></div>
+    <small>© <span id="yr"></span> Messenjah Selah · messenjahselah.com</small>
+  </div>
+</footer>
+
+<!-- PLAYER BAR -->
+<div class="player">
+  <div class="bar" id="seek"><div class="fill" id="fill"></div></div>
+  <div class="wrap">
+    <div class="pinfo"><img class="art" src="images/cover.jpg" alt=""><div style="min-width:0"><b id="pTitle">Messenjah Selah</b><small id="pSub">Press play</small></div></div>
+    <div class="ctrls">
+      <button class="sk" onclick="prev()" aria-label="Previous">⏮</button>
+      <button class="play" id="pPlay" onclick="togglePlay()" aria-label="Play">▶</button>
+      <button class="sk" onclick="next()" aria-label="Next">⏭</button>
+    </div>
+    <span class="ptime" id="pTime">0:00 / 0:00</span>
+    <input type="range" class="vol" id="vol" min="0" max="1" step="0.01" value="0.9" aria-label="Volume">
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal" id="lockModal" onclick="if(event.target===this)closeModal()">
+  <div class="box">
+    <button class="x" onclick="closeModal()">×</button>
+    <div class="ic">🔒</div>
+    <h3>Members Only</h3>
+    <p id="lockMsg">This is part of the Vault. Join to unlock the full library of music and meditation.</p>
+    <a href="#join" class="btn btn-gold" onclick="closeModal()">See Memberships</a>
+  </div>
+</div>
+
+<audio id="audio" preload="none"></audio>
+
+<script>
+/* =========================================================
+   EDIT EVERYTHING HERE. Put songs in /music, meditations in
+   /meditations, photos in /images. Paste your payment links
+   (Stripe, Patreon, PayPal, Bandcamp) into LINKS.
+   ========================================================= */
+const LINKS = {
+  patreon:   "#",            // Selah's Patreon page link
+  spotify:   "https://open.spotify.com/search/Messenjah%20Selah",
+  apple:     "https://music.apple.com/us/search?term=Messenjah%20Selah",
+  bandcamp:  "#",            // Bandcamp page
+  buyMusic:  "#",            // where fans buy downloads
+  merch:     "#",            // merch store
+  booking:   "mailto:centertrueself@gmail.com?subject=Booking%20Inquiry",
+  newsletter:"#",            // Mailchimp / ConvertKit form URL
+  tips:      { "$5":"#", "$10":"#", "$25":"#", "Any":"#" },   // PayPal / Stripe / Cash App links
+  checkout: {                // one link per plan
+    free:"#newsletter",
+    roots_monthly:"#", roots_yearly:"#",
+    circle_monthly:"#", circle_yearly:"#"
+  },
+  socials: { FB:"https://www.facebook.com/DivinityOneSelah/", IG:"#", YT:"#", TT:"#" },
+  coaching:  "mailto:centertrueself@gmail.com?subject=Coaching%20Session"   // Calendly / booking link
+};
+
+const TRACKS = [   // free:false = members only (locked)
+  { title:"Song Title One",   sub:"Single",             file:"music/song1.mp3", dur:"4:12", free:true },
+  { title:"Song Title Two",   sub:"Single",             file:"music/song2.mp3", dur:"3:58", free:true },
+  { title:"Song Title Three", sub:"Album",              file:"music/song3.mp3", dur:"4:30", free:true },
+  { title:"Song Title Four",  sub:"Album",              file:"music/song4.mp3", dur:"5:01", free:false },
+  { title:"Song Title Five",  sub:"Unreleased",         file:"music/song5.mp3", dur:"4:44", free:false },
+];
+
+const MEDITATIONS = [
+  { icon:"🌅", title:"Morning Awakening", text:"Start the day grounded, grateful and clear.", file:"meditations/morning.mp3", dur:"10 min", free:true },
+  { icon:"💚", title:"Heartspace",        text:"Open the heart and release what weighs you down.", file:"meditations/heartspace.mp3", dur:"15 min", free:false },
+  { icon:"⚖️", title:"Balance & Peace",   text:"Return to balance when life feels heavy.", file:"meditations/balance.mp3", dur:"12 min", free:false },
+  { icon:"🌙", title:"Night Rest",        text:"Let go of the day and sleep in peace.", file:"meditations/night.mp3", dur:"20 min", free:false },
+];
+
+const TEACHINGS = [
+  { icon:"🦁", tag:"Unity",     title:"One Love, Many Paths", text:"Why respecting every path makes us stronger together.", link:"#" },
+  { icon:"⚖️", tag:"Balance",   title:"When There’s Balance, There’s Peace", text:"Simple ways to bring balance into everyday life.", link:"#" },
+  { icon:"✊🏾", tag:"Freedom",  title:"The Power to Choose", text:"Jah gave us the power to choose. How to use it wisely.", link:"#" },
+];
+
+const COACHING = [   // add price:"$__" when ready
+  { icon:"💛", title:"1-on-1 Heart-Space Coaching", text:"A private session to move from heartspace to mindset, clear blocks and set your path." },
+  { icon:"🎶", title:"Sound Healing Session", text:"Healing through music, voice and vibration, in person in Eugene or online." },
+  { icon:"🕊️", title:"Group Meditation Circle", text:"Guided meditation with music for groups, retreats, schools and events." },
+];
+
+const VAULT = [
+  { title:"Full Album", sub:"Complete album + bonus tracks", bg:"linear-gradient(135deg,#1E6B3C,#C99A1B)" },
+  { title:"Live Sessions", sub:"Recorded live", bg:"linear-gradient(135deg,#C99A1B,#2E8B50)" },
+  { title:"Dub Versions", sub:"Riddims & dubs", bg:"linear-gradient(135deg,#16251A,#1E6B3C)" },
+  { title:"Unreleased", sub:"Early & demo recordings", bg:"linear-gradient(135deg,#8a6a10,#16251A)" },
+];
+
+const TIERS = [
+  { name:"Free", m:"0", y:"0", key:"free", cta:"Get Free Updates",
+    feats:["Free songs & 1 meditation","Weekly affirmation email","Teachings & news"] },
+  { name:"Roots", m:"5", y:"50", key:"roots", cta:"Join Roots", feat:true,
+    feats:["Everything in Free","Full guided meditation library","Full Music Vault access","Early access to new releases"] },
+  { name:"Inner Circle", m:"15", y:"150", key:"circle", cta:"Join the Inner Circle",
+    feats:["Everything in Roots","Monthly live teaching session","Exclusive downloads","Name in album credits","Members-only merch discount"] },
+];
+
+const AFFIRMATIONS = [
+  "I am worthy of Divinity.",
+  "I am a vessel of love, peace and positive vibration.",
+  "When I am in balance, I am at peace.",
+  "I choose awareness over fear.",
+  "My mind is clear, my heart is open, my spirit is strong.",
+  "I honor every path, and I walk mine with purpose.",
+  "Today I give thanks for the breath in my body.",
+  "I release what no longer serves me.",
+  "I am rooted like the tree and free like the river.",
+  "Every day I rise higher in love and wisdom.",
+  "The music lives in me, and I share it with the world."
+];
+
+/* ======================= SITE LOGIC ======================= */
+const $ = id => document.getElementById(id);
+const audio = $("audio");
+let queue = [], qi = -1;
+
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2600); }
+function openLock(msg){ if(msg) $("lockMsg").textContent=msg; $("lockModal").classList.add("open"); }
+function closeModal(){ $("lockModal").classList.remove("open"); }
+function fmt(s){ if(!isFinite(s)) return "0:00"; s=Math.floor(s); return Math.floor(s/60)+":"+String(s%60).padStart(2,"0"); }
+
+function renderTracks(){
+  $("trackList").innerHTML = TRACKS.map((t,i)=>`
+    <li data-i="${i}" onclick="playIndex(${i})">
+      <span class="n">${i+1}</span>
+      <span class="t"><b>${t.title}</b><small>${t.sub}</small></span>
+      ${t.free?'<span class="free">FREE</span>':'<span class="lock">🔒 MEMBERS</span>'}
+      <span class="d">${t.dur}</span>
+    </li>`).join("");
+}
+function renderMeds(){
+  $("medCards").innerHTML = MEDITATIONS.map((m,i)=>`
+    <div class="card">
+      <div class="icon">${m.icon}</div>
+      <h3>${m.title}</h3>
+      <p>${m.text}</p>
+      <div class="meta"><small style="color:var(--muted)">${m.dur}</small>
+        ${m.free?`<button class="btn btn-green btn-sm" onclick="playMed(${i})">▶ Begin</button>`
+                :`<button class="btn btn-ghost btn-sm" onclick="openLock('This meditation is for members. Join Roots to unlock the full meditation library.')">🔒 Members</button>`}
+      </div>
+    </div>`).join("");
+}
+function renderTeach(){
+  $("teachCards").innerHTML = TEACHINGS.map(t=>`
+    <div class="card">
+      <div class="icon">${t.icon}</div>
+      <span class="tag">${t.tag}</span>
+      <h3>${t.title}</h3>
+      <p>${t.text}</p>
+      <a class="readmore" href="${t.link}">Read the teaching →</a>
+    </div>`).join("");
+}
+function renderCoach(){
+  $("coachCards").innerHTML = COACHING.map(c=>`
+    <div class="card">
+      <div class="icon">${c.icon}</div>
+      <h3>${c.title}</h3>
+      <p>${c.text}</p>
+      <div class="meta"><small style="color:var(--muted)">${c.price||"Online or Eugene, OR"}</small>
+        <a class="btn btn-gold btn-sm" href="${LINKS.coaching}">Book a Session</a></div>
+    </div>`).join("");
+}
+function renderVault(){
+  $("vaultGrid").innerHTML = VAULT.map(v=>`
+    <div class="vitem" onclick="openLock()">
+      <div class="vcover" style="background:${v.bg}">${v.title}<div class="lk">🔒</div></div>
+      <div class="vinfo"><b>${v.title}</b><small>${v.sub}</small></div>
+    </div>`).join("");
+}
+let billing="monthly";
+function setBilling(b){ billing=b; $("tMonthly").classList.toggle("on",b==="monthly"); $("tYearly").classList.toggle("on",b==="yearly"); renderTiers(); }
+function renderTiers(){
+  $("tiers").innerHTML = TIERS.map(t=>{
+    const price = billing==="monthly"?t.m:t.y, per = billing==="monthly"?"/month":"/year";
+    const link = t.key==="free" ? "#newsletter" : LINKS.checkout[t.key+"_"+billing];
+    return `<div class="tier ${t.feat?'feat':''}">
+      ${t.feat?'<span class="pop">Most Popular</span>':''}
+      <h3>${t.name}</h3>
+      <div class="price">$${price}<small> ${t.key==="free"?"forever":per}</small></div>
+      <ul>${t.feats.map(f=>`<li>${f}</li>`).join("")}</ul>
+      <a class="btn ${t.feat?'btn-gold':'btn-green'}" style="justify-content:center" href="${link}" ${t.key!=="free"?'target="_blank" rel="noopener"':''} onclick="return checkLink(this)">${t.cta}</a>
+    </div>`;
+  }).join("");
+}
+function checkLink(a){ if(a.getAttribute("href")==="#"){ toast("Payment link coming soon"); return false;} if(a.getAttribute("href")==="#newsletter"){ document.querySelector(".news").scrollIntoView({behavior:"smooth"}); return false;} return true; }
+
+/* Affirmations */
+let lastAff=-1;
+function newAffirmation(){
+  const el=$("affText"); let i; do{ i=Math.floor(Math.random()*AFFIRMATIONS.length);}while(i===lastAff && AFFIRMATIONS.length>1);
+  lastAff=i; el.style.opacity=0; setTimeout(()=>{ el.textContent="“"+AFFIRMATIONS[i]+"”"; el.style.opacity=1; },250);
+}
+function dailyAffirmation(){
+  const d=new Date(); const i=(d.getFullYear()*372+d.getMonth()*31+d.getDate())%AFFIRMATIONS.length;
+  lastAff=i; $("affText").textContent="“"+AFFIRMATIONS[i]+"”";
+}
+function shareAffirmation(){
+  const text=$("affText").textContent+" — Messenjah Selah · messenjahselah.com";
+  if(navigator.share){ navigator.share({text}).catch(()=>{}); }
+  else if(navigator.clipboard){ navigator.clipboard.writeText(text).then(()=>toast("Affirmation copied"),()=>toast(text)); }
+  else toast(text);
+}
+
+/* Player */
+function load(item){
+  audio.src=item.file;
+  $("pTitle").textContent=item.title; $("pSub").textContent=item.sub||item.dur||"Messenjah Selah";
+  $("nowTitle").textContent=item.title; $("nowSub").textContent=item.sub?("Messenjah Selah · "+item.sub):"Messenjah Selah";
+  document.querySelectorAll("#trackList li").forEach(li=>li.classList.toggle("active", queue===TRACKS && +li.dataset.i===qi));
+  audio.play().catch(()=>{});
+}
+function playIndex(i){
+  const t=TRACKS[i]; if(!t) return;
+  if(!t.free){ openLock("“"+t.title+"” is in the Vault. Become a member to listen."); return; }
+  queue=TRACKS; qi=i; load(t);
+}
+function playMed(i){ queue=MEDITATIONS; qi=i; load({...MEDITATIONS[i], sub:"Guided Meditation · "+MEDITATIONS[i].dur}); }
+function step(dir){
+  if(!queue.length){ playIndex(0); return; }
+  let n=qi;
+  for(let k=0;k<queue.length;k++){ n=(n+dir+queue.length)%queue.length; if(queue[n].free) break; }
+  qi=n; load(queue===MEDITATIONS?{...queue[n],sub:"Guided Meditation · "+queue[n].dur}:queue[n]);
+}
+function next(){ step(1); } function prev(){ if(audio.currentTime>3){audio.currentTime=0;return;} step(-1); }
+function togglePlay(){ if(!audio.src){ playIndex(0); return; } audio.paused?audio.play().catch(()=>{}):audio.pause(); }
+function setPlaying(p){ $("pPlay").textContent=p?"❚❚":"▶"; $("bigPlay").textContent=p?"❚❚ Pause":"▶ Play"; $("disc").classList.toggle("spin",p); }
+audio.addEventListener("play",()=>setPlaying(true));
+audio.addEventListener("pause",()=>setPlaying(false));
+audio.addEventListener("ended",next);
+audio.addEventListener("error",()=>{ setPlaying(false); toast("Audio coming soon. Upload the file to "+audio.getAttribute("src")); });
+audio.addEventListener("timeupdate",()=>{ $("fill").style.width=(audio.duration?audio.currentTime/audio.duration*100:0)+"%"; $("pTime").textContent=fmt(audio.currentTime)+" / "+fmt(audio.duration); });
+$("seek").addEventListener("click",e=>{ if(!audio.duration) return; const r=e.currentTarget.getBoundingClientRect(); audio.currentTime=(e.clientX-r.left)/r.width*audio.duration; });
+$("vol").addEventListener("input",e=>audio.volume=e.target.value);
+document.addEventListener("keydown",e=>{ if(e.code==="Space" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)){ e.preventDefault(); togglePlay(); } });
+
+/* Links */
+function setLink(id,url){ const a=$(id); if(!a) return; a.href=url; if(url==="#") a.addEventListener("click",e=>{e.preventDefault();toast("Link coming soon");}); }
+setLink("lnkPatreonAff",LINKS.patreon); setLink("lnkSpotify",LINKS.spotify); setLink("lnkApple",LINKS.apple); setLink("lnkBandcamp",LINKS.bandcamp);
+setLink("lnkBuy",LINKS.buyMusic); setLink("lnkMerch",LINKS.merch); setLink("lnkBook",LINKS.booking);
+$("tipBtns").innerHTML=Object.entries(LINKS.tips).map(([k,v])=>`<a href="${v}" target="_blank" rel="noopener" onclick="return checkLink(this)">${k}</a>`).join("");
+$("socials").innerHTML=Object.entries(LINKS.socials).map(([k,v])=>`<a href="${v}" target="_blank" rel="noopener" onclick="return checkLink(this)" aria-label="${k}">${k}</a>`).join("");
+$("newsForm").addEventListener("submit",e=>{ if(LINKS.newsletter==="#"){ e.preventDefault(); toast("Thank you! Blessings. (Connect your email list to save signups)"); e.target.reset(); } else { e.target.action=LINKS.newsletter; e.target.method="post"; } });
+document.querySelectorAll("#menu a").forEach(a=>a.addEventListener("click",()=>$("menu").classList.remove("open")));
+$("yr").textContent=new Date().getFullYear();
+
+renderTracks(); renderMeds(); renderTeach(); renderCoach(); renderVault(); renderTiers(); dailyAffirmation();
+</script>
+</body>
+</html>
